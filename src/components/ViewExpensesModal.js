@@ -6,12 +6,12 @@ import {
 } from "../contexts/BudgetsContext";
 import { currencyFormatter } from "../utils";
 
-export default function ViewExpensesModal({ show, handleClose }) {
+export default function ViewExpensesModal({ budgetId, handleClose }) {
   const { getBudgetExpenses, budgets, deleteBudget, deleteExpense } =
     useBudgets();
 
   const expenses = getBudgetExpenses(budgetId);
-  const budgets =
+  const budget =
     UNCATEGORIZED_BUDGET_ID === budgetId
       ? {
           name: "Uncatergorized",
