@@ -26,7 +26,7 @@ export default function BudgetCard({
             {currencyFormatter.format(amount)}
             {max && (
               <span className="text-muted fs-6 ms-1">
-                / {currencyFormatter.format(max)}{" "}
+                / {currencyFormatter.format(max)}
               </span>
             )}
           </div>

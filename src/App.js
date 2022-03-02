@@ -29,7 +29,7 @@ function App() {
             Add Budget
           </Button>
           <Button variant="outline-primary" onClick={openAddExpenseModal}>
-            Add EXpense
+            Add Expense
           </Button>
         </Stack>
         <div
@@ -77,7 +77,7 @@ function App() {
         handleClose={() => setShowAddExpenseModal(false)}
       />
       <ViewExpensesModal
-        BudgetId={viewExpensesModalBudgetId}
+        budgetId={viewExpensesModalBudgetId}
         handleClose={() => setViewExpensesModalBudgetId()}
       />
     </>
